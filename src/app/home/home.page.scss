@@ -1,27 +1,62 @@
-#container {
-  text-align: center;
+.tab-bars{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+.tab-rec{
+    width: 100%;
+}
+.tab-link{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.front-btn{
+    img {
+        width: 100%;
+    }
+}
+.symbol-btn{
+    img {
+        width: 35px;
+        margin-top: 15px;
+    }
+}
+.hover-btn {
+    img {
 
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+    width: 55px;
+    text-align: center;
+    margin-left: 30px;
+
+    }
+}
+.my-rec{
+    position: absolute;
+height: 88px;
+left: 0px;
+right: 0px;
+bottom: 0px;
+
+background: linear-gradient(180deg, rgba(58, 58, 106, 0.26) 0%, rgba(37, 36, 76, 0.26) 100%);
+border: 0.5px solid rgba(117, 130, 244, 0.5);
+backdrop-filter: blur(25px);
 }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
-}
+// Modal
 
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
-}
-
-#container a {
-  text-decoration: none;
-}
+ion-modal {
+    --height: 50%;
+    --border-radius: 16px;
+    --box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  }
+  
+  ion-modal::part(backdrop) {
+    background: rgba(209, 213, 219);
+    opacity: 1;
+  }
+  
+  ion-modal ion-toolbar {
+    --background: #312b5b;
+    --color: white;
+  }

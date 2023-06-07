@@ -1,0 +1,37 @@
+.widget-page {
+  margin-top: 20%;
+  padding: 15px;
+}
+.weather-widget {
+  position: relative;
+}
+
+.weather-img {
+  position: absolute;
+  top: -30px;
+  right: 0px;
+}
+.temp-container {
+  position: relative;
+  // margin: -10px;
+  // padding: 0px;
+}
+.main-temp {
+  font-size: 100px;
+  font-weight: 100;
+  padding: 0px;
+  margin: -20px;
+}
+.degree-symbol {
+  font-size: 20px;
+  position: absolute;
+  left: 50px;
+  top: 15px;
+}
+.sm-degree-symbol {
+  font-size: 10px;
+  margin-bottom: 10px;
+}
+h1 {
+  font-size: 40px;
+}

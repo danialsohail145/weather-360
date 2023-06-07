@@ -1,0 +1,39 @@
+<!-- <div class="widget-page">
+  <div class="weather-widget shadow-sm p-3  rounded">
+    <img  src="../../../../../assets/images/widget.png">
+    <img class="weather-img" src="../../../../../assets/images/weather/mcr.png">
+  </div>
+ 
+
+</div> -->
+
+<div class="widget-page text-center" *ngIf="!isloading">
+  <div>
+    <h1>
+      {{weatherInfo.name}}
+    </h1>
+    <!-- <img [src]="weatherIcon(weatherInfo.weather[0]    )"> -->
+    
+    <span class="temp-container">
+      <p class="degree-symbol">
+        <ion-icon name="ellipse-outline"></ion-icon>
+      </p>
+      <p class="main-temp">
+        {{weatherInfo.main.temp | kelvinCenti | number: '1.0-0'}}
+      </p>
+    </span>
+    <span class="d-flex justify-content-center">
+      <img [src]="weatherIcon">
+      <p class="mt-3">{{weatherInfo.weather[0].main}}</p>
+    </span>
+    <span>
+      <p>
+        H: {{weatherInfo.main.temp_max | kelvinCenti | number: '1.0-0'}} <ion-icon class="sm-degree-symbol" name="ellipse-outline"></ion-icon>
+        L: {{weatherInfo.main.temp_min | kelvinCenti | number: '1.0-0'}}  <ion-icon class="sm-degree-symbol" name="ellipse-outline"></ion-icon>
+      </p>
+    
+    </span>
+  </div>
+</div>
+
+

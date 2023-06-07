@@ -1,0 +1,68 @@
+ion-searchbar {
+    --background: linear-gradient(
+      168.44deg,
+      rgba(46, 51, 90, 0.26) 1.62%,
+      rgba(28, 27, 51, 0.26) 95.72%
+    );
+    --box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    --border-radius: 10px;
+    color: rgba(235, 235, 245, 0.6);
+    --icon-color: rgba(235, 235, 245, 0.6);
+    --placeholder-color: rgba(235, 235, 245, 0.6);
+  }
+  
+  ion-toolbar {
+    --background: #312b5b;
+    color: white;
+  }
+  .list-class {
+      max-height: 30vh;
+    height: auto;
+    overflow: auto;
+    --background: #312b5b;
+    color: white;
+    border-radius: 15px;
+  }
+  .widget-data{
+      position: relative;
+  }
+  .weather-icon{
+    position: absolute;
+    top: 10px;
+    right: 0;
+    width: 30%;
+  }
+  .temp-container{
+    position: absolute;
+      left: 0;
+      top: 0;
+  }
+  .main-temp{
+    font-size: 89px;
+    font-weight: 100;
+    padding: 0px;
+    margin-left: 15px;
+    margin-bottom: 0;
+  }
+  .degree-symbol{
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    left: 105px;
+    top: 23px;
+  }
+  .secondary-temp{
+    position: absolute;
+      bottom: -10px;
+      margin-left: 15px;
+      ion-icon{
+        font-size: 10px;
+      }
+  }
+  .city-detail{
+    position: absolute;
+    width: 100%;
+    bottom: 4px;
+    left: 15px;
+  }
+  
